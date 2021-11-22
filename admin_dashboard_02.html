@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KB카드 비정형데이터분석플랫폼</title>
+
+  <!-- Libs CSS -->
+  <link rel="stylesheet" href="./assets/libs/bootstrap/bootstrap-icon.min.css" />
+  <link rel="stylesheet" href="./assets/libs/bootstrap/bootstrap.min.css" />
+
+  <!-- Libs JS -->
+  <script src="./assets/libs/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="./assets/libs/jquery/jquery.1.11.js"></script>
+
+  <!-- Theme CSS -->
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+</head>
+
+<body>
+
+
+  <button type="button" class="btn-primary" data-bs-toggle="modal"
+    data-bs-target="#write-dashboard-content">popup</button>
+
+
+  <!-- write-dashboard-content-popup -->
+  <div class="modal fade" id="write-dashboard-content" tabindex="-1" aria-labelledby="write-dashboard-content"
+    aria-hidden="true">
+    <div class="modal-dialog-centered modal-dialog">
+      <div class="modal-content modal-item">
+        <div class="modal-head border-0">
+          <h5 class="modal-title">대시보드 신규등록</h5>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-12 col-md-12 col-lg-12">
+              <form>
+                <table class="write-dashboard-table">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <h6>제목</h6>
+                      </td>
+                      <td colspan="5">
+                        <input type="text" placeholder="제목을 입력하세요">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <h6>소속</h6>
+                      </td>
+                      <td colspan="2">
+                        <input type="text" placeholder="소속을 입력하세요">
+                      </td>
+                      <td>
+                        <h6>이름</h6>
+                      </td>
+                      <td colspan="2">
+                        <input type="text" placeholder="이름을 입력하세요">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <h6>갱신주기</h6>
+                      </td>
+                      <td colspan="2">
+                        <select>
+                          <option selected>갱신주기를 입력하세요</option>
+                          <option>ㅇㅇ</option>
+                          <option>ㅇㅇ</option>
+                          <option>ㅇㅇ</option>
+                        </select>
+                      </td>
+                      <td>
+                        <h6>작성일</h6>
+                      </td>
+                      <td colspan="2">
+                        <input type="date">
+                      </td>
+                    </tr>
+                    <tr class="border-0">
+                      <td rowspan="4">
+                        <h6>유형</h6>
+                      </td>
+                      <td colspan="5">
+                        <ul>
+                          <li>
+                            <div class="radio-group">
+                              <label for="area">
+                                <input type="radio" id="area" name="type">
+                                <i class="bi-xy bi-area"></i>
+                              </label>
+                              <p class="bi-desc">area</p>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="radio-group">
+                              <label for="controls">
+                                <input type="radio" id="controls" name="type">
+                                <i class="bi-xy bi-controls"></i>
+                              </label>
+                              <p class="bi-desc">controls</p>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="radio-group">
+                              <label for="coordinate-map">
+                                <input type="radio" id="coordinate-map" name="type">
+                                <i class="bi-xy bi-coordinate-map"></i>
+                              </label>
+                              <p class="bi-desc">coordinate map</p>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="radio-group">
+                              <label for="data-table">
+                                <input type="radio" id="data-table" name="type">
+                                <i class="bi-xy bi-data-table"></i>
+                              </label>
+                              <p class="bi-desc">data table</p>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="radio-group">
+                              <label for="gauge">
+                                <input type="radio" id="gauge" name="type">
+                                <i class="bi-xy bi-gauge"></i>
+                              </label>
+                              <p class="bi-desc">gauge</p>
+                            </div>
+                          </li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr class="border-0">
+                      <td colspan="5">
+                        <ul>
+                          <li>
+                            <div class="radio-group">
+                              <label for="goal">
+                                <input type="radio" id="goal" name="type">
+                                <i class="bi-xy bi-goal"></i>
+                              </label>
+                              <p class="bi-desc">goal</p>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="radio-group">
+                              <label for="heat-map">
+                                <input type="radio" id="heat-map" name="type">
+                                <i class="bi-xy bi-heat-map"></i>
+                              </label>
+                              <p class="bi-desc">heat map</p>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="radio-group">
+                              <label for="horizontal-bar">
+                                <input type="radio" id="horizontal-bar" name="type">
+                                <i class="bi-xy bi-horizontal-bar"></i>
+                              </label>
+                              <p class="bi-desc">horizontal bar</p>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="radio-group">
+                              <label for="line">
+                                <input type="radio" id="line" name="type">
+                                <i class="bi-xy bi-line"></i>
+                              </label>
+                              <p class="bi-desc">line</p>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="radio-group">
+                              <label for="maps">
+                                <input type="radio" id="maps" name="type">
+                                <i class="bi-xy bi-maps"></i>
+                              </label>
+                              <p class="bi-desc">maps</p>
+                            </div>
+                          </li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr class="border-0">
+                      <td colspan="5">
+                        <ul class="radio-group">
+                          <li>
+                            <div class="radio-group">
+                              <label for="mark-down">
+                                <input type="radio" id="mark-down" name="type">
+                                <i class="bi-xy bi-mark-down"></i>
+                              </label>
+                              <p class="bi-desc">markdown</p>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="radio-group">
+                              <label for="metric">
+                                <input type="radio" id="metric" name="type">
+                                <i class="bi-xy bi-metric"></i>
+                              </label>
+                              <p class="bi-desc">metric</p>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="radio-group">
+                              <label for="pie">
+                                <input type="radio" id="pie" name="type">
+                                <i class="bi-xy bi-pie"></i>
+                              </label>
+                              <p class="bi-desc">pie</p>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="radio-group">
+                              <label for="region-map">
+                                <input type="radio" id="region-map" name="type">
+                                <i class="bi-xy bi-region-map"></i>
+                              </label>
+                              <p class="bi-desc">region map</p>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="radio-group">
+                              <label for="tag-cloud">
+                                <input type="radio" id="tag-cloud" name="type">
+                                <i class="bi-xy bi-tag-cloud"></i>
+                              </label>
+                              <p class="bi-desc">tag cloud</p>
+                            </div>
+                          </li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="5">
+                        <ul>
+                          <li>
+                            <div class="radio-group">
+                              <label for="timelion">
+                                <input type="radio" id="timelion" name="type">
+                                <i class="bi-xy bi-timelion"></i>
+                              </label>
+                              <p class="bi-desc">timelion</p>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="radio-group">
+                              <label for="tsvb">
+                                <input type="radio" id="tsvb" name="type">
+                                <i class="bi-xy bi-tsvb"></i>
+                              </label>
+                              <p class="bi-desc">tsvb</p>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="radio-group">
+                              <label for="vega">
+                                <input type="radio" id="vega" name="type">
+                                <i class="bi-xy bi-vega"></i>
+                              </label>
+                              <p class="bi-desc">vega</p>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="radio-group">
+                              <label for="vertical-bar">
+                                <input type="radio" id="vertical-bar" name="type">
+                                <i class="bi-xy bi-vertical-bar"></i>
+                              </label>
+                              <p class="bi-desc">vertical bar</p>
+                            </div>
+                          </li>
+                          <li></li>
+                        </ul>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <h6>키워드</h6>
+                      </td>
+                      <td colspan="5">
+                        <input type="text" placeholder="키워드를 입력하세요">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <h6>URL</h6>
+                      </td>
+                      <td colspan="5">
+                        <input type="text" placeholder="대시보드 URL을 입력하세요">
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-cancel" data-bs-dismiss="modal">취소</button>
+          <button type="submit" class="btn btn-update">등록</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KB카드 비정형데이터분석플랫폼</title>
+
+  <!-- Libs CSS -->
+  <link rel="stylesheet" href="./assets/libs/bootstrap/bootstrap-icon.min.css" />
+  <link rel="stylesheet" href="./assets/libs/bootstrap/bootstrap.min.css" />
+
+  <!-- Libs JS -->
+  <script src="./assets/libs/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="./assets/libs/jquery/jquery.1.11.js"></script>
+
+  <!-- Theme CSS -->
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+  <script src="./comm/header.js"></script>
+  <script src="./comm/footer.js"></script>
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light">
+
+    <div class="side-navbar">
+      <i class="bi bi-side-open" onclick="nav_open()"></i>
+    </div>
+
+    <div class="navbar-logo">
+      <img class="logo" src="assets/img/logo/kb_logo.png" />
+    </div>
+
+    <div class="nav-search">
+      <form class="search">
+        <input type="search" class="form-control">
+      </form>
+      <!--h4>문장이나 단락을 통해 의도를 이해하는 <b>시맨틱 검색</b>을 경험해 보세요</h4-->
+    </div>
+
+    <div class="navbar-right">
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a href="#">키워드 뉴스</a>
+        </li>
+        <li class="nav-item">
+          <a href="#">대시보드</a>
+        </li>
+        <li class="nav-item">
+          <a href="#">분석보고서</a>
+        </li>
+        <li class="nav-item">
+          <a href="#">시멘틱검색</a>
+        </li>
+      </ul>
+
+      <div class="my">
+        <div class="my-dropdown">
+          <span class="my-img"></span>
+          <div class="dropdown-content">
+            <!--img src="./assets/img/icon/consloe.png" class="drop-consloe"-->
+            <div class="row">
+              <div class="col-12">
+                <div class="my-info">
+                  <span class="my-img"></span>
+                  <h5>MS00000</h5>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <div class="my-box">
+                  <h5>나의 키워드<span class="edit">edit</span></h5>
+                  <div class="keyword-box">
+                    <span>#KB국민카드</span><span>COVID-19</span><span>올댓카드</span><span>#KB국민카드</span><span>#KB국민카드</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <div class="my-list">
+                  <h5>좋아요 표시한 콘텐츠</h5>
+                  <ul>
+                    <li>대시보드</li>
+                    <li>분석보고서</li>
+                    <li>키워드 뉴스</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <div class="my-list">
+                  <h5>구독한 콘텐츠</h5>
+                  <ul>
+                    <li>대시보드</li>
+                    <li>분석보고서</li>
+                    <li>키워드 뉴스</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <div class="my-list border-0">
+                  <h5>관리자</h5>
+                  <ul>
+                    <li>추천 키워드 설정</li>
+                    <li>뉴스 콘텐츠 관리</li>
+                    <li>시맨틱 콘텐츠 관리</li>
+                    <li>대시보드 작성</li>
+                    <li>보고서 작성</li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div id="side_nav" class="side-nav">
+      <!--a href="javascript:void(0)" class="side-close" onclick="nav_close()">
+        <img src="./assets/img/icon/close.png" />
+      </a-->
+      <div class="side-search">
+        <input type="search" />
+      </div>
+
+      <div class="side-list">
+        <a href="#">키워드 뉴스</a>
+        <a href="#">분석 보고서</a>
+        <a href="#">대시보드</a>
+        <a href="#">시맨틱 검색</a>
+      </div>
+    </div>
+
+
+  </nav>
+
+  <div class="navbar-p">
+    <div class="container">
+      <div class="row">
+        .col
+      </div>
+    </div>
+
+  </div>
+  <script>
+    function nav_open() {
+      document.getElementById("side_nav").style.width = "100%";
+    }
+
+    function nav_close() {
+      document.getElementById("side_nav").style.width = "0";
+    }
+  </script>
+
+</body>
+
+</html>
