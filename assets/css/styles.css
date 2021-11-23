@@ -1965,33 +1965,19 @@ body {
   text-align: left;
   list-style: none;
   position: absolute;
-  z-index: 1000;
   right: 0;
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-20px);
   transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
 }
 
-/*.menu {*/
-/*  background: #ffffff;*/
-/*  border-radius: 8px;*/
-/*  position: absolute;*/
-/*  top: 60px;*/
-/*  right: 0;*/
-/*  width: 300px;*/
-/*  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);*/
-/*  opacity: 0;*/
-/*  visibility: hidden;*/
-/*  transform: translateY(-20px);*/
-/*  transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;*/
-/*}*/
-
-/*.menu.active {*/
-/*  opacity: 1;*/
-/*  visibility: visible;*/
-/*  transform: translateY(0);*/
-/*}*/
+.dropdown-menu:active {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
 
 .dropdown-menu a {
   color: #999;
@@ -2220,7 +2206,7 @@ body {
 /* content */
 .cont {
   margin: 70px 0;
-  padding: 30px 15px;
+  padding: 0 15px;
 }
 
 .cont-head {
@@ -3206,7 +3192,7 @@ main .item-text {
     text-align: center;
     margin: 20px 0 0 0;
     position: absolute;
-    bottom: 0;
+    bottom: 5px;
     left: 50%;
     transform: translate(-50%,-50%);
   }
@@ -3861,7 +3847,6 @@ input[type="date"]:focus {
 }
 }
 
-
 form.example input[type=text] {
   border: 2px solid #754ffe;
   border-right: 0;
@@ -3870,7 +3855,7 @@ form.example input[type=text] {
   padding: 10px;
   font-size: 17px;
   float: left;
-  width: 90%;
+  width: 80%;
   background: #fff;
 }
 
@@ -3884,7 +3869,7 @@ form.example button {
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
   float: left;
-  width: 10%;
+  width: 20%;
   padding: 10px;
   background: none;
   color: #754ffe;
@@ -3900,4 +3885,14 @@ form.example::after {
   content: "";
   clear: both;
   display: table;
+}
+
+@media (min-width: 1200px) {
+  form.example input[type=text] {
+    width: 90%;
+  }
+
+  form.example button {
+    width: 10%;
+  }
 }
