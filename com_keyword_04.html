@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KB카드 비정형데이터분석플랫폼</title>
+
+  <!-- Libs CSS -->
+  <link rel="stylesheet" href="./assets/libs/bootstrap/bootstrap-icon.min.css" />
+  <link rel="stylesheet" href="./assets/libs/bootstrap/bootstrap.min.css" />
+
+  <!-- Libs JS -->
+  <script src="./assets/libs/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="./assets/libs/jquery/jquery.1.11.js"></script>
+
+  <!-- Theme CSS -->
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+</head>
+
+<body>
+
+  <button type="button" class="btn-primary" data-bs-toggle="modal" data-bs-target="#mykeyword_modal">내키워드에
+    반영</button>
+
+  <!-- mykeyword modal -->
+  <div class="modal fade" id="mykeyword_modal" tabindex="-1" aria-labelledby="mykeyword_modal" aria-hidden="true">
+    <div class="modal-dialog-centered modal-dialog">
+      <div class="modal-content">
+        <div class="modal-head">
+          <h5 class="modal-title bb-1">구독 키워드 관리</h5>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-6">
+              <dl class="my-keyword">
+                <dt>나의 구독 키워드</dt>
+                <dd>
+                  <h6>외화동향</h6>
+                  <div class="toggle-group">
+                    <input id="11" class="checkbox-toggle toggle-switch" type="checkbox" />
+                    <label for="11" data-on="ON" data-off="OFF"></label>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+            <div class="col-12 col-md-6 col-lg-6">
+              <dl class="my-keyword">
+                <dt>새로운 구독 키워드</dt>
+                <dd>
+                  <h6>외화동향</h6>
+                  <div class="toggle-group">
+                    <input id="11" class="checkbox-toggle toggle-switch" type="checkbox" />
+                    <label for="11" data-on="ON" data-off="OFF"></label>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-cancel" data-bs-dismiss="modal">취소</button>
+          <button type="submit" class="btn btn-update">등록</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- mykeyword modal end -->
+  <!-- Libs JS -->
+  <script src="./assets/libs/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="./assets/libs/jquery/jquery.1.11.js"></script>
+
+</body>
+
+</html>
