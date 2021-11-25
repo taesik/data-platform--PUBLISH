@@ -26,8 +26,7 @@
     신규등록</button>
 
   <!-- write-news-content-popup -->
-  <div class="modal fade" id="write-news-content" tabindex="-1" aria-labelledby="write-news-content"
-    aria-hidden="true">
+  <div class="modal fade" id="write-news-content" tabindex="-1" aria-labelledby="write-news-content" aria-hidden="true">
     <div class="modal-dialog-centered modal-dialog w-md-700 w-lg-800">
       <div class="modal-content">
 
@@ -35,11 +34,11 @@
           <h5 class="modal-title">뉴스 콘텐츠 신규등록</h5>
         </div>
 
-        <div class="modal-body modal-scroll">
+        <div class="modal-body">
           <div class="row">
             <div class="col-12 col-md-12 col-lg-12">
               <form>
-                <table class="write write-news-content">
+                <table class="write-news-content">
                   <tbody>
                     <tr>
                       <td>
@@ -54,11 +53,31 @@
                         <h6>검색</h6>
                       </td>
                       <td>
-                        <form class="search-group" action="">
-                          <input type="text" placeholder="대시보드 검색" name="search">
+                        <div class="search-group-2">
+                          <input type="search" name="search">
                           <button class="submit" type="submit">
                             <i class="bi bi-search"></i></button>
-                        </form>
+                        </div>
+                        <div class="search-tag">
+                          <span>
+                            <div class="cb-group">
+                              <input type="checkbox" id="a" checked>
+                              <label for="aa">#KB국민카드<span></span></label>
+                            </div>
+                          </span>
+                          <span>
+                            <div class="cb-group">
+                              <input type="checkbox" id="ad" checked>
+                              <label for="ad">#KB국민카드<span></span></label>
+                            </div>
+                          </span>
+                          <span>
+                            <div class="cb-group">
+                              <input type="checkbox" id="ae" checked>
+                              <label for="ae">#KB국민카드<span></span></label>
+                            </div>
+                          </span>
+                        </div>
                       </td>
                     </tr>
                   </tbody>

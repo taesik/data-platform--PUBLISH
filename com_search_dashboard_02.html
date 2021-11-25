@@ -17,199 +17,40 @@
 
   <!-- Theme CSS -->
   <link rel="stylesheet" href="./assets/css/styles.css" />
-  <script src="./comm/header.js"></script>
-  <script src="./comm/footer.js"></script>
-
 </head>
 
 <body>
-  <!-- HEADER -->
-  <header id="gnb_header"></header>
-  <!-- HEADER END -->
 
-  <div class="bg-primary-1">
-    <div class="container">
-      <div class="sub-top">
-        <div class="sub-title">
-          <h2>대시보드<span class="sub-title-en">Dashboard</span></h2>
+  <button type="button" class="btn btn-md btn-primary" data-bs-toggle="modal" data-bs-target="#dashboard-modal">대시보드</button>
+
+  <!-- dashboard modal -->
+  <div class="modal fade" id="dashboard-modal" tabindex="-1" aria-labelledby="dashboard-modal" aria-hidden="true">
+    <div class="modal-dialog-centered modal-dialog w-740">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="button-group-four">
+            <button><i class="bi bi-heart-fill"></i></button>
+            <button><i class="bi bi-bell-fill"></i></button>
+            <button><i class="bi bi-share-fill"></i></button>
+          </div>
+          <h5 class="modal-title">신규 사용자 추이</h5>
+          <div class="modal-title-desc">
+            <div class="my-number">MS00000</div>
+            <ul class="item-desc">
+              <span><i class="bi bi-clock"></i></span>
+              <li>2021-12-31 23:00:00</li>
+            </ul>
+            <span>[매일갱신]</span>
+          </div>
+        </div>
+        
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-cancel" data-bs-dismiss="modal">닫기</button>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- DASHBOARD START -->
-  <div class="container">
-    <div class="cont">
-      <div class="cont-head">
-        <div class="row">
-          <div class="col-12">
-            <h5 class="cont-title">대시보드</h5>
-            <span class="cont-title-en">Dashboard</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="cont-body">
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 mb-2">
-
-          <div class="col">
-            <div class="card">
-              <div class="card-list">
-                <div class="bi-xy-2 bi-area"></div>
-                <div class="card-item">
-                  <h5 class="card-item-title">신규 사용이</h5>
-                  <ul class="card-item-desc">
-                    <span><i class="bi bi-clock"></i></span>
-                    <li>2020-12-31 23:57:14</li>
-                  </ul>
-                </div>
-                <div class="card-item-tag txt-post">
-                  <span>#KB국민카드</span>
-                  <span>#KB국민카드</span>
-                  <span>#KB국민카드</span>
-                  <span>#KB국민카드</span>
-                  <span>#KB국민카드</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- /.col end -->
-
-          <div class="col">
-            <div class="card">
-              <div class="card-list">
-                <div class="bi-xy-2 bi-area"></div>
-                <div class="card-item">
-                  <h5 class="card-item-title">신규 사용이</h5>
-                  <ul class="card-item-desc">
-                    <span><i class="bi bi-clock"></i></span>
-                    <li>2020-12-31 23:57:14</li>
-                  </ul>
-                </div>
-                <div class="card-item-tag txt-post">
-                  <span>#KB국민카드</span>
-                  <span>#KB국민카드</span>
-                  <span>#KB국민카드</span>
-                  <span>#KB국민카드</span>
-                  <span>#KB국민카드</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- /.col end -->
-
-          <div class="col">
-            <div class="card">
-              <div class="card-list">
-                <div class="bi-xy-2 bi-area"></div>
-                <div class="card-item">
-                  <h5 class="card-item-title">신규 사용이</h5>
-                  <ul class="card-item-desc">
-                    <span><i class="bi bi-clock"></i></span>
-                    <li>2020-12-31 23:57:14</li>
-                  </ul>
-                </div>
-                <div class="card-item-tag txt-post">
-                  <span>#KB국민카드</span>
-                  <span>#KB국민카드</span>
-                  <span>#KB국민카드</span>
-                  <span>#KB국민카드</span>
-                  <span>#KB국민카드</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- /.col end -->
-
-          <div class="col">
-            <div class="card">
-              <div class="card-list">
-                <div class="bi-xy-2 bi-area"></div>
-                <div class="card-item">
-                  <h5 class="card-item-title">신규 사용이</h5>
-                  <ul class="card-item-desc">
-                    <span><i class="bi bi-clock"></i></span>
-                    <li>2020-12-31 23:57:14</li>
-                  </ul>
-                </div>
-                <div class="card-item-tag txt-post">
-                  <span>#KB국민카드</span>
-                  <span>#KB국민카드</span>
-                  <span>#KB국민카드</span>
-                  <span>#KB국민카드</span>
-                  <span>#KB국민카드</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- /.col end -->
-
-          <div class="col">
-            <div class="card">
-              <div class="card-list">
-                <div class="bi-xy-2 bi-area"></div>
-                <div class="card-item">
-                  <h5 class="card-item-title">신규 사용이</h5>
-                  <ul class="card-item-desc">
-                    <span><i class="bi bi-clock"></i></span>
-                    <li>2020-12-31 23:57:14</li>
-                  </ul>
-                </div>
-                <div class="card-item-tag txt-post">
-                  <span>#KB국민카드</span>
-                  <span>#KB국민카드</span>
-                  <span>#KB국민카드</span>
-                  <span>#KB국민카드</span>
-                  <span>#KB국민카드</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- /.col end -->
-
-          <div class="col">
-            <div class="card">
-              <div class="card-list">
-                <div class="bi-xy-2 bi-area"></div>
-                <div class="card-item">
-                  <h5 class="card-item-title">신규 사용이</h5>
-                  <ul class="card-item-desc">
-                    <span><i class="bi bi-clock"></i></span>
-                    <li>2020-12-31 23:57:14</li>
-                  </ul>
-                </div>
-                <div class="card-item-tag txt-post">
-                  <span>#KB국민카드</span>
-                  <span>#KB국민카드</span>
-                  <span>#KB국민카드</span>
-                  <span>#KB국민카드</span>
-                  <span>#KB국민카드</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- /.col end -->
-
-        </div>
-      </div>
-
-      <div class="cont-bottom">
-        <div class="row">
-          <div class="col-12">
-            <div class="button-group-one">
-              <button class="btn btn-sm">more</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-  <!-- DASHBOARD END -->
-
-  <!-- FOOTER -->
-  <footer id="gnb_footer"></footer>
-  <!-- FOOTER END -->
 
 </body>
 
