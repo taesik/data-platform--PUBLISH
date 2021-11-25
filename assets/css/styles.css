@@ -2746,6 +2746,13 @@ button:focus {
   margin: 0 0 6px 0;
 }
 
+.card-item-text {
+  color: #999999;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 10px 0 0 0;
+}
+
 .card-item-desc {
   color: #999999;
   font-size: 14px;
@@ -4669,20 +4676,43 @@ form.example::after {
 }
 
 .date-group {
-  display: inline-block;
-  position: relative;
-  left: -35px;
+  display: flex;
+  /*position: relative;
+  left: -35px;*/
+}
+
+.date-group span {
+  color: #999999;
+  font-size: 12px;
+  margin: 0 2px;
+  line-height: 2.5;
+}
+
+.date-group button {
+  border: 0;
+  background: none;
+  color: #999999;
+  font-size: 12px;
+}
+
+.date-group button i:before {
+  vertical-align: 0 !important;
 }
 
 .date-group input[type="date"] {
-  border: 0;
+  border: 1px solid #d0d0d0;
+  border-radius: 4px;
   background: none;
-  width: 60px;
-  padding: 0;
+  color: #999;
+  font-size: 12px;
+  height: 28px;
+  width: 110px;
+  padding: 0 4px;
   position: relative;
   top: 1px;
 }
 
+/*
 .date-group input[type="date"]::-webkit-datetime-edit-text,
 .date-group input[type="date"]::-webkit-datetime-edit-month-field,
 .date-group input[type="date"]::-webkit-datetime-edit-day-field,
@@ -4690,12 +4720,14 @@ form.example::after {
   -webkit-appearance: none;
   display: none;
 }
+*/
 
 .date-group input[type="date"]::-webkit-calendar-picker-indicator {
   background: url(../img/icon/calendar.png);
   background-position: center center;
-  background-size: 14px 14px;
+  background-size: 18px 18px;
   background-repeat: no-repeat;
+  width: 20px;
 
 }
 
