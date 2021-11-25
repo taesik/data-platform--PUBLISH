@@ -2433,6 +2433,44 @@ button:focus {
   padding: 0 15px;
 }
 
+.cont-list-2 {
+  background-color: #eee;
+  border: 1px solid #eee;
+  border-radius: 30px;
+  display: flex;
+  height: 50px;
+  padding: 10px 0 10px 10px;
+}
+
+.cont-list-2 span {
+  background-color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  height: 30px;
+  width: 30px;
+}
+
+.cont-list-2 span p {
+  color: #333;
+  font-weight: 700;
+  font-size: 14px;
+  margin: 0;
+  line-height: 30px;
+}
+
+.cont-list-2 h5 {
+  color: #333;
+  font-size: 16px;
+  margin: auto 20px;
+}
+
+.list-close {
+  margin: auto 10px;
+  position: relative;
+  top: 5px;
+  right: 5px;
+}
+
 .cont-list-item {
   border-top: 1px solid #d0d0d0;
   padding: 20px 0;
@@ -2775,6 +2813,15 @@ button:focus {
   word-wrap: break-word;
 }
 
+.txt-post-1 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  word-wrap: break-word;
+}
+
 .txt-post-2 {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -2787,6 +2834,10 @@ button:focus {
 @media (min-width: 698px) {
   .txt-post {
     -webkit-line-clamp: 2;
+  }
+
+  .txt-post-1 {
+    -webkit-line-clamp: 1;
   }
 
   .txt-post-2 {
@@ -3712,6 +3763,57 @@ form.search-group input[type=text]:focus {
   right: 0;
   width: 10%;
 }
+
+.btn-group {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.btn-heart {
+  background: none;
+  border: 0;
+  color: #fff;
+  font-size: 12px;
+  padding: 0 3px;
+  -webkit-text-stroke: 1px #d0d0d0;
+  z-index: 3;
+}
+
+.btn-heart:focus,
+.btn-heart:checked,
+.btn-heart:disabled {
+  color: #754ffe;
+  -webkit-text-stroke: 1px #754ffe;
+}
+
+.btn-bell {
+  background: none;
+  border: 0;
+  color: #fff;
+  font-size: 12px;
+  padding: 0 3px;
+  -webkit-text-stroke: 1px #d0d0d0;
+  z-index: 3;
+}
+
+.btn-bell:focus,
+.btn-bell:checked,
+.btn-bell:disabled {
+  color: #754ffe;
+  -webkit-text-stroke: 1px #754ffe;
+}
+
+@media (min-width: 698px) {
+  .btn-heart {
+    font-size: 14px;
+  }
+
+  .btn-bell {
+    font-size: 14px;
+  }
+}
+
 
 .btn-write {
   background-color: #666;

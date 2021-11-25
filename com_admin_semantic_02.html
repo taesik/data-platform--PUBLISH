@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KB카드 비정형데이터분석플랫폼</title>
+
+  <!-- 2021-11-17 작업완료 -->
+  <!-- Libs CSS -->
+  <link rel="stylesheet" href="./assets/libs/bootstrap/bootstrap-icon.min.css" />
+  <link rel="stylesheet" href="./assets/libs/bootstrap/bootstrap.min.css" />
+
+  <!-- Libs JS -->
+  <script src="./assets/libs/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="./assets/libs/jquery/jquery.1.11.js"></script>
+
+  <!-- Theme CSS -->
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+</head>
+
+<body>
+
+  <button type="button" class="btn-primary" data-bs-toggle="modal" data-bs-target="#write-semantic-content">시멘틱 콘텐츠
+    신규등록</button>
+
+  <!-- write-semantic-content-popup -->
+  <div class="modal fade" id="write-semantic-content" tabindex="-1" aria-labelledby="write-semantic-content" aria-hidden="true">
+    <div class="modal-dialog-centered modal-dialog w-md-700 w-lg-800">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title">시멘틱 콘텐츠 신규등록</h5>
+        </div>
+
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-12 col-md-12 col-lg-12">
+              <form>
+                <table class="write-news-content">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <h6>제목</h6>
+                      </td>
+                      <td>
+                        <input type="text" placeholder="제목을 입력하세요">
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-cancel" data-bs-dismiss="modal">취소</button>
+          <button type="submit" class="btn btn-update">등록</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>

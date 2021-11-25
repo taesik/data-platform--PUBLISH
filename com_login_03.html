@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KB카드 비정형데이터분석플랫폼</title>
+
+  <!-- Libs CSS -->
+  <link rel="stylesheet" href="./assets/libs/bootstrap/bootstrap-icon.min.css" />
+  <link rel="stylesheet" href="./assets/libs/bootstrap/bootstrap.min.css" />
+
+  <!-- Libs JS -->
+  <script src="./assets/libs/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="./assets/libs/jquery/jquery.1.11.js"></script>
+
+  <!-- Theme CSS -->
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+  <script src="./comm/header.js"></script>
+  <script src="./comm/footer.js"></script>
+
+</head>
+
+<body>
+
+  <!-- ROOT -->
+  <div id="root">
+    <div class="container">
+      <div class="content">
+        <table>
+          <tbody>
+            <th>
+              <button type="button" class="btn-primary" data-bs-toggle="modal"
+                data-bs-target="#login_modal">로그인</button>
+            </th>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <!-- ROOT END -->
+
+
+
+  <!-- login modal -->
+  <div class="modal fade" id="login_modal" tabindex="-1" aria-labelledby="login_modal" aria-hidden="true">
+    <div class="modal-dialog-centered modal-dialog w-320">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title">로그인</h5>
+        </div>
+
+        <div class="modal-body mt-3">
+          <form class="row">
+            <div class="col-12">
+              <label for="id" class="form-label">계정</label>
+              <input type="text" class="form-control mb-45" id="id">
+            </div>
+            <div class="col-12">
+              <label for="password" class="form-label">비밀번호</label>
+              <input type="text" class="form-control mb-06 is-invalid" id="password">
+              <div id="password_error" class="invalid-feedback">
+                <i class="bi bi-exclamation-circle"></i>
+                아이디 또는 비밀번호가 맞지 않습니다.
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="password01">
+                <label class="form-check-label" for="password01">
+                  비밀번호 표기
+                </label>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-cancel" data-bs-dismiss="modal">취소</button>
+          <button type="submit" class="btn btn-update">로그인</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- login modal end -->
+
+</body>
+
+</html>
